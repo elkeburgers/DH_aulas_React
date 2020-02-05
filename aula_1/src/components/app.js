@@ -1,5 +1,6 @@
 import React from 'react';
 import TableProfissionais from './table_profissionais';
+import Form from './form';
 
 // para habilitar para ser importado por outras classes/ arquivos usar 'export default':
     export default class App extends React.Component {
@@ -9,6 +10,7 @@ import TableProfissionais from './table_profissionais';
             <div>
             <h1>Hello World</h1>
             <TableProfissionais/>
+            <Form />
             </div>
         )
     }

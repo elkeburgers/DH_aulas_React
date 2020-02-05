@@ -22,11 +22,13 @@ import Form from './form';
         }
 
         render() {
+            // para testar no console do navegador
+            console.log ("STATE:", this.state);
         return (
             // como soh renderiza um componente, incluimos uma div porque ele entende que estah renderizando apenas a div. Sem ela, o react entende que estah renderizando o h1 e o tableProfissionais.
             <div>
             <h1>Hello World</h1>
-            <TableProfissionais/>
+            <TableProfissionais  profissionais={this.state.profissionais}/>
             <Form />
             </div>
         )

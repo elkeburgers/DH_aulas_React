@@ -4,7 +4,24 @@ import Form from './form';
 
 // para habilitar para ser importado por outras classes/ arquivos usar 'export default':
     export default class App extends React.Component {
-    render() {
+
+        constructor (props) {
+            super (props)
+            this.state = {
+                profissionais: [
+                    {
+                        Nome: "Vagner Venceslau",
+                        Github: "http://github.io/vagven"
+                    },
+                    {
+                        nome: "Eduardo Rocha",
+                        github: "http://github.io/eduroc"
+                    }
+                ]
+            }
+        }
+
+        render() {
         return (
             // como soh renderiza um componente, incluimos uma div porque ele entende que estah renderizando apenas a div. Sem ela, o react entende que estah renderizando o h1 e o tableProfissionais.
             <div>

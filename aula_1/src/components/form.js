@@ -23,5 +23,5 @@ export default class Form extends React.Component {
     }
 }
 
-// usamos o p porque ele faz div e tem margem, usamos apenas para pequenas demonstracoes.
+// usamos o ''p' porque ele faz div e tem margem, usamos apenas para pequenas demonstracoes.
 // container: criamos a tag form para que ele entenda que renderizamos apenas um elemento.

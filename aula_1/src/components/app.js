@@ -1,18 +1,11 @@
 import React from 'react';
 
-    class App extends React.Component {
-    // render para renderizar, usado sempre com React.Component
+// para habilitar para ser importado por outras classes/ arquivos usar 'export default':
+    export default class App extends React.Component {
     render() {
-        // por padrao, sempre colocamos () quando fazemos blocos html, que nao precisa mas evita alguns problemas
         return (
-            <div>
-            <h1>App</h1>
-            {/* props eh um objeto que recebe todas as propriedades atribuidas a ele no post: */}
-            <h1>{this.props.titulo}</h1>
-            </div>
+            <h1>Hello World</h1>
         )
     }
 }
 
-// para habilitar para ser importado por outras classes/ arquivos:
-export default App;

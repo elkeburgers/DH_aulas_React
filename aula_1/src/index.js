@@ -11,6 +11,7 @@ import App from "./components/app";
 
 ReactDOM.render(
     ( 
+        <App />
         // className eh a class do JS
         // <div className="content">
         //     <div className="card card-default">
@@ -18,7 +19,7 @@ ReactDOM.render(
         //         <h1> Hello world! </h1>
         //         </div>
         //    {/* 'ola mundo' eh a propriedade atribuida ao componente post criado em posts.js  */}
-            <App titulo="Hello world"/>
+        //      <App titulo="Hello world"/>
         //    {/* <Post texto="Olá Mundo" titulo="Primeiro"/>
         //    <Post texto="Eu sou o segundo post." titulo="Segundo"/>
         //  <Post texto="Eu sou o último post." titulo="Terceiro"/> */}

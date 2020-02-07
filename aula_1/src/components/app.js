@@ -10,10 +10,12 @@ import Form from './form';
             this.state = {
                 profissionais: [
                     {
+                        id: 1,
                         nome: "Vagner Venceslau",
                         github: "http://github.io/vagven"
                     },
                     {
+                        id: 2,
                         nome: "Eduardo Rocha",
                         github: "http://github.io/eduroc"
                     }

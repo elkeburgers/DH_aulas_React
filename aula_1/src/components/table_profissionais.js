@@ -8,15 +8,17 @@ import React from 'react';
         return (
             <table className="table mt-5 mb-5">
                 <thead>
-                    <th>Nome</th>
-                    <th>Github</th>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Github</th>
+                    </tr>
                 </thead>
                 <tbody>
-                    {this.props.dados.map((profissionais) => {
+                    {this.props.dados.map((profissional) => {
                         return (
-                            <tr>
-                                <td>{profissionais.nome}</td>
-                                <td>{profissionais.github}</td>
+                            <tr key={profissional.id}>
+                                <td>{profissional.nome}</td>
+                                <td>{profissional.github}</td>
                             </tr>
                         )
                     })}

@@ -10,8 +10,8 @@ import Form from './form';
             this.state = {
                 profissionais: [
                     {
-                        Nome: "Vagner Venceslau",
-                        Github: "http://github.io/vagven"
+                        nome: "Vagner Venceslau",
+                        github: "http://github.io/vagven"
                     },
                     {
                         nome: "Eduardo Rocha",
@@ -28,7 +28,7 @@ import Form from './form';
             // como soh renderiza um componente, incluimos uma div porque ele entende que estah renderizando apenas a div. Sem ela, o react entende que estah renderizando o h1 e o tableProfissionais.
             <div>
             <h1>Hello World</h1>
-            <TableProfissionais  profissionais={this.state.profissionais}/>
+            <TableProfissionais  dados={this.state.profissionais}/>
             <Form />
             </div>
         )

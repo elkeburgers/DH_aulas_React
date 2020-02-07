@@ -9,19 +9,20 @@ export default class Form extends React.Component {
                     <div className="card-header">
                         <h2 className="card-title">Formulário</h2>
                     </div>
-                    <p>
-                    <label>Nome:</label><br/>
-                    <input type="text"></input>
-                    </p>
+                    <div className="card-body">
+                        <p className="form-group">
+                        <label className="form-label">Nome:</label><br/>
+                        <input className="form-control" type="text"></input>
+                        </p>
 
-                    <p>
-                    <label>Github:</label><br/>
-                    <input type="url"></input>
-                    </p>
-
-                    <p>
-                    <button>Enviar!</button>
-                    </p>
+                        <p>
+                        <label className="form-label">Github:</label><br/>
+                        <input className="form-control" type="url"></input>
+                        </p>
+                    </div>
+                    <div className="card-footer text-right">
+                    <button className="btn btn-primary">Enviar!</button>
+                    </div>
                 </form>
             </div>
         )

@@ -12,16 +12,14 @@ import React from 'react';
                     <th>Github</th>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>
-                            {this.props.dados[0].nome}
-                            
-                        </td>
-                        <td>
-                            {this.props.dados[0].github}
-                            
-                        </td>
-                    </tr>
+                    {this.props.dados.map((profissionais) => {
+                        return (
+                            <tr>
+                                <td>{profissionais.nome}</td>
+                                <td>{profissionais.github}</td>
+                            </tr>
+                        )
+                    })}
                 </tbody>
             </table>
         )

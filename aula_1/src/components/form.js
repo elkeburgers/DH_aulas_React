@@ -21,7 +21,7 @@ export default class Form extends React.Component {
                         </p>
                     </div>
                     <div className="card-footer text-right">
-                    <button className="btn btn-primary">Enviar!</button>
+                    <button className="btn btn-primary" onClick={this.myClickButtonFunction}>Enviar!</button>
                     </div>
                 </form>
             </div>
